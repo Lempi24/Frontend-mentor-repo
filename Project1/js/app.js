@@ -10,6 +10,7 @@ fetch('data.json')
 
 			const imgElement = document.createElement('img');
 			imgElement.src = item.icon;
+			imgElement.alt = item.category;
 
 			const bElement = document.createElement('b');
 			bElement.textContent = item.category;
