@@ -14,17 +14,18 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Hanken Grotesk", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #333;
 }
 
 .container {
   display: flex;
-  width: 35%;
+  width: 700px;
   border-radius: 10px;
   background-color: #fff;
   overflow: hidden;
@@ -32,10 +33,10 @@ body {
 
 .image {
   width: 50%;
-  height: 40vh;
-  background-image: url("../images/image-product-desktop.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+}
+.image img {
+  width: 100%;
+  height: 100%;
   background-size: cover;
 }
 
@@ -66,7 +67,7 @@ body {
 }
 
 .name {
-  font-family: "Lobster", cursive;
+  font-family: "Fraunces", serif;
   font-size: 2.3rem;
 }
 
@@ -81,6 +82,7 @@ body {
   color: #3d8168;
   font-weight: bold;
   font-size: 2rem;
+  font-family: "Fraunces", serif;
 }
 
 .old-pricing {
@@ -97,8 +99,28 @@ body {
   padding: 1rem 2rem;
   border-radius: 10px;
   color: white;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #295745;
 }
 
 .icon {
   padding-right: 0.7rem;
+}
+
+@media (max-width: 820px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+  .image {
+    width: 100%;
+  }
+  .info-section {
+    width: 100%;
+    margin: 1.5rem 0rem;
+  }
 }/*# sourceMappingURL=style.css.map */
