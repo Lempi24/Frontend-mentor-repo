@@ -20,7 +20,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Montserrat", sans-serif;
-  background-color: #333;
+  background-color: hsl(30, 38%, 92%);
 }
 
 .container {
@@ -99,6 +99,8 @@ body {
   padding: 1rem 2rem;
   border-radius: 10px;
   color: white;
+  font-weight: bold;
+  cursor: pointer;
   transition: background-color 0.3s;
 }
 
