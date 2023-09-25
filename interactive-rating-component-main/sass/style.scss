@@ -1,0 +1,126 @@
+@use './colors' as c;
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Overpass', sans-serif;
+	background-color: c.$VeryDarkBlue;
+}
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+.wrapper {
+	background-color: c.$DarkBlue;
+	border-radius: 20px;
+	max-width: 450px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content-container {
+	display: flex;
+	flex-direction: column;
+	padding: 3rem;
+	gap: 2rem;
+}
+.star {
+	background-color: c.$CircleColor;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	padding: 1rem;
+}
+.feedback-info {
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
+	color: c.$White;
+}
+.info {
+	color: c.$MediumGrey;
+}
+.form {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 2rem;
+	.form-items {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+	label {
+		position: relative;
+		border-radius: 50%;
+	}
+	label:hover > input[type='radio'] {
+		background-color: c.$LightGrey;
+	}
+	label:hover > span {
+		color: c.$White;
+	}
+	input[type='radio'] {
+		appearance: none;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: c.$CircleColor;
+	}
+	input[type='radio']:checked {
+		background-color: c.$Orange;
+	}
+	input[type='radio']:checked + span {
+		color: c.$White;
+	}
+	span {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: c.$LightGrey;
+	}
+
+	.submit-btn {
+		width: 100%;
+		border: none;
+		border-radius: 20px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		background-color: c.$Orange;
+		color: white;
+		padding: 0.7rem;
+	}
+}
+
+//thank You page
+.thanks-container {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+}
+.thanks-img {
+	width: 200px;
+	height: 140px;
+}
+.selected-info {
+	background-color: c.$CircleColor;
+	border-radius: 20px;
+	padding: 0.5rem 1rem;
+	color: c.$Orange;
+}
+.hidden {
+	display: none;
+}
