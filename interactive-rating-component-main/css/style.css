@@ -133,4 +133,17 @@ body {
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 820px) {
+  .wrapper {
+    margin: 50px;
+  }
+  .form-items {
+    gap: 1rem;
+  }
+  .form-items input[type=radio] {
+    width: 40px;
+    height: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */

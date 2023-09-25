@@ -124,3 +124,15 @@ body {
 .hidden {
 	display: none;
 }
+@media (max-width: 820px) {
+	.wrapper {
+		margin: 50px;
+	}
+	.form-items {
+		gap: 1rem;
+		input[type='radio'] {
+			width: 40px;
+			height: 40px;
+		}
+	}
+}
