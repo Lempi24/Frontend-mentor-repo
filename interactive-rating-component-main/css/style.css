@@ -111,6 +111,10 @@ body {
   color: white;
   padding: 0.7rem;
 }
+.form .submit-btn:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
 
 .thanks-container {
   display: flex;

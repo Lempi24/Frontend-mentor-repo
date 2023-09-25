@@ -102,6 +102,10 @@ body {
 		color: white;
 		padding: 0.7rem;
 	}
+	.submit-btn:hover {
+		background-color: c.$White;
+		color: c.$Orange;
+	}
 }
 
 //thank You page
