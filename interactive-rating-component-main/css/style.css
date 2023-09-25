@@ -74,7 +74,8 @@ body {
   border-radius: 50%;
 }
 .form label:hover > input[type=radio] {
-  background-color: hsl(217, 12%, 63%);
+  background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
 }
 .form label:hover > span {
   color: hsl(0, 0%, 100%);
@@ -89,7 +90,7 @@ body {
   background-color: #323e49;
 }
 .form input[type=radio]:checked {
-  background-color: hsl(25, 97%, 53%);
+  background-color: hsl(217, 12%, 63%);
 }
 .form input[type=radio]:checked + span {
   color: hsl(0, 0%, 100%);
@@ -110,6 +111,7 @@ body {
   background-color: hsl(25, 97%, 53%);
   color: white;
   padding: 0.7rem;
+  cursor: pointer;
 }
 .form .submit-btn:hover {
   background-color: hsl(0, 0%, 100%);
