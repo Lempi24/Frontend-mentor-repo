@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 54%, 11%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 10px;
+  padding: 1.5rem;
+  max-width: 400px;
+  box-shadow: 0px 0px 25px 0px rgb(47, 65, 91);
+}
+
+.equ-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.title {
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  width: 60%;
+}
+
+.info {
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+  width: 90%;
+}
+
+.expire-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.expire-container .eth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.expire-container .eth .eth-cost {
+  color: hsl(178, 100%, 50%);
+}
+.expire-container .eth .expire-text {
+  color: hsl(215, 51%, 70%);
+}
+.expire-container img {
+  padding-right: 0.5rem;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+.user img {
+  width: 30px;
+  border: hsl(0, 0%, 100%) 1px solid;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.user a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+hr {
+  border: 1px solid hsl(215, 32%, 27%);
+}
+
+.hoverable:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.img-container {
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsla(178, 100%, 50%, 0.445);
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+.overlay img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+@media (max-width: 430px) {
+  .container {
+    margin: 0rem 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
