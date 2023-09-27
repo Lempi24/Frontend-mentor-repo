@@ -103,13 +103,18 @@ body {
   border-radius: 0px 10px 10px 0px;
 }
 
+@media (max-width: 495px) {
+  .container {
+    width: 90% !important;
+  }
+}
 @media (max-width: 739px) {
   .container {
     flex-direction: column-reverse;
     text-align: center;
     align-items: center;
     justify-content: center;
-    width: 70%;
+    width: 60%;
     height: 80% !important;
   }
   .info-section {
@@ -142,9 +147,6 @@ body {
   .main-paragraph {
     font-size: 1rem;
   }
-  .stat {
-    margin: 0rem 2rem 0rem 0rem;
-  }
   .stats .stat-number {
     font-size: 1.1rem;
   }
@@ -155,5 +157,8 @@ body {
   }
   .info-section {
     gap: 2rem;
+  }
+  .main-paragraph {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
