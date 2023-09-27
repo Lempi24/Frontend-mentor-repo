@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(233, 47%, 7%);
+  font-family: "Inter", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  width: 1440px;
+  display: flex;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px;
+  margin: 2rem;
+}
+
+.info-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8rem;
+  padding: 5rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.main-heading {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+.main-heading span {
+  color: hsl(277, 64%, 61%);
+}
+
+.main-paragraph {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 1.3rem;
+  width: 90%;
+}
+
+.stats {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stats .stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.stats .stat-number {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.stats .stat-name {
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.8rem;
+}
+
+.image {
+  position: relative;
+  width: 50%;
+  background-image: url("../images/image-header-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(277, 64%, 61%, 0.527);
+  border-radius: 0px 10px 10px 0px;
+}
+
+@media (max-width: 739px) {
+  .container {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 80% !important;
+  }
+  .info-section {
+    height: 70%;
+    width: 100%;
+    padding: 0rem;
+  }
+  .image {
+    width: 100%;
+    height: 30%;
+    background-image: url("../images/image-header-mobile.jpg");
+    border-radius: 10px 10px 0px 0px;
+  }
+  .overlay {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .stats {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 839px) {
+  .info-section {
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .main-heading {
+    font-size: 2rem;
+  }
+  .main-paragraph {
+    font-size: 1rem;
+  }
+  .stat {
+    margin: 0rem 2rem 0rem 0rem;
+  }
+  .stats .stat-number {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .container {
+    height: 50%;
+  }
+  .info-section {
+    gap: 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */
