@@ -1,0 +1,94 @@
+/*font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+*/
+@use './colors' as c;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Lexend Deca', sans-serif;
+}
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container {
+	display: flex;
+	width: 1000px;
+	background-color: c.$VeryLightGray;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 0rem 2rem;
+}
+.section {
+	height: 100%;
+	min-width: 33.3%;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	padding: 3rem;
+}
+.orange {
+	background-color: c.$BrightOrange;
+}
+.blue {
+	background-color: c.$DarkCyan;
+}
+.green {
+	background-color: c.$VeryDarkCyan;
+}
+.icon {
+	width: 68px;
+}
+.name {
+	color: c.$VeryLightGray;
+	font-family: 'Big Shoulders Display', cursive;
+	font-size: 3rem;
+	text-transform: uppercase;
+}
+.info {
+	color: c.$TransparentWhite;
+	width: 200px;
+}
+.btn {
+	border: none;
+	border-radius: 20px;
+	padding: 1rem 3rem;
+	color: inherit;
+	margin-top: 6rem;
+	width: 175px;
+	cursor: pointer;
+	border: 1px solid transparent;
+}
+.orange-text {
+	color: c.$BrightOrange;
+}
+.orange-text:hover {
+	border: 1px solid c.$VeryLightGray;
+	background-color: c.$BrightOrange;
+	color: c.$VeryLightGray;
+}
+.blue-text {
+	color: c.$DarkCyan;
+}
+.blue-text:hover {
+	border: 1px solid c.$VeryLightGray;
+	background-color: c.$DarkCyan;
+	color: c.$VeryLightGray;
+}
+.green-text {
+	color: c.$VeryDarkCyan;
+}
+.green-text:hover {
+	border: 1px solid c.$VeryLightGray;
+	background-color: c.$VeryDarkCyan;
+	color: c.$VeryLightGray;
+}
+@media (max-width: 960px) {
+	.container {
+		flex-direction: column;
+		width: 400px;
+	}
+}
