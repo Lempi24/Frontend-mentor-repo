@@ -103,7 +103,12 @@ body {
 }
 
 @media (max-width: 960px) {
+  body {
+    position: relative;
+  }
   .container {
+    position: absolute;
+    top: 0;
     flex-direction: column;
     width: 400px;
   }
