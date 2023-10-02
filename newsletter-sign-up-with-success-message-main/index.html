@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main class="container" id="main">
+    <section class="subscribe-section">
+      <h1 class="subscribe-section__header">Stay updated!</h1>
+      <p class="subscribe-section__paragpraph">Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul class="subscribe-section__list">
+        <li>Product discovery and building what matters</li>
+        <li>Measuring to ensure updates are a success</li>
+        <li>And much more!</li>
+      </ul>
+      <form class="subscribe-section__form">
+        <div class="form-state">
+          <p class="input-label">Email address</p>
+          <p class="input-error hidden">Valid email required</p>
+        </div>
+        <div class="input-wrapper">
+          <input type="email" class="form-input" placeholder="email@company.com">
+          <button class="btn">Subscribe to monthly newsletter</button>
+        </div>
+      </form>
+    </section>
+    <section class="image-section">
+
+    </section>
+  </main>
+  <main class="container thanks hidden" id="thanks">
+    <img src="assets/images/icon-success.svg" alt="" class="icon">
+    <h1 class="thanks-header">Thanks for subscribing!</h1>
+    <p class="thanks-info">
+      A confirmation email has been sent to <span>ash@loremcompany.com</span>.
+      Please open it and click the button inside to confirm your subscription.
+    </p>
+    <button class="btn thanks-btn" id="thanks-btn">Dismiss message</button>
+  </main>
+  <script src="app.js"></script>
+</body>
+
+</html>
