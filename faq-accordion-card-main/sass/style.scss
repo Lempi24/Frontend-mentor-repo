@@ -1,0 +1,131 @@
+@use './colors' as c;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Kumbh Sans', sans-serif;
+}
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(180deg, c.$SoftViolet 0%, c.$SoftBlue 100%);
+}
+.container {
+	display: flex;
+	width: 1000px;
+	height: 550px;
+	background-color: #fff;
+	border-radius: 10px;
+}
+.image-section {
+	position: relative;
+	background-image: url(../images/bg-pattern-desktop.svg),
+		url(../images/illustration-woman-online-desktop.svg);
+	background-repeat: no-repeat;
+	background-size: 150%, 80%;
+	background-position: -390px -170px, -45px 90px;
+	width: 50%;
+	img {
+		position: absolute;
+		left: -60px;
+		top: 200px;
+		width: 150px;
+	}
+}
+.faq {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 2rem;
+	.header {
+		text-transform: uppercase;
+	}
+}
+.questions {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	hr {
+		margin: 0.5rem 0rem;
+		width: 80%;
+	}
+}
+.question {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-height: 20px;
+	width: 80%;
+	cursor: pointer;
+	color: c.$DarkGrayishBlue;
+}
+.question-title:hover {
+	color: c.$SoftRed;
+}
+.answer {
+	max-width: 80%;
+	display: none;
+	color: c.$DarkGrayishBlue;
+}
+.active {
+	display: block;
+}
+@media (max-width: 720px) {
+	.container {
+		margin: 0rem 2rem;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 70vh;
+		width: 80vw;
+	}
+	.image-section {
+		position: absolute;
+		width: 80%;
+		height: 300px;
+		top: -40px;
+		background-image: url(../images/bg-pattern-mobile.svg)
+			url(../images/illustration-woman-online-desktop.svg);
+		background-position: center;
+		background-size: 70%;
+		img {
+			position: absolute;
+			top: 35%;
+			left: 15%;
+			width: 20vw;
+		}
+	}
+	.question {
+		width: 100%;
+	}
+	.faq {
+		display: flex;
+		align-items: center;
+		width: 100%;
+	}
+	.questions {
+		width: 90%;
+		hr {
+			width: 100%;
+		}
+	}
+}
+/*
+.image-section {
+	position: relative;
+	background-image: url(../images/bg-pattern-desktop.svg),
+		url(../images/illustration-woman-online-desktop.svg);
+	background-repeat: no-repeat;
+	background-size: 150%, 80%;
+	background-position: -390px -170px, -45px 90px;
+	width: 50%;
+	img {
+		position: absolute;
+		left: -90px;
+		top: 80px;
+	}
+}
+*/
