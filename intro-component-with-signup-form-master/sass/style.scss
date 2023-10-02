@@ -1,0 +1,131 @@
+@use './colors' as c;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: c.$Red;
+	background-image: url(../images/bg-intro-desktop.png);
+}
+.card {
+	display: flex;
+	width: 80%;
+	height: 60vh;
+	&__text {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+		padding-right: 3rem;
+		.header {
+			color: #fff;
+			font-weight: 700;
+			font-size: 3rem;
+		}
+		.info {
+			color: #fff;
+		}
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		width: 50%;
+		.trial-box {
+			background-color: c.$Blue;
+			border-radius: 10px;
+			padding: 0.5rem 0rem;
+			text-align: center;
+			color: #ffffffb9;
+			span {
+				color: #fff;
+				font-weight: 700;
+			}
+		}
+		.trial-form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			background-color: #fff;
+			height: 80%;
+			gap: 1rem;
+			border-radius: 10px;
+			.input-wrapper {
+				position: relative;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				width: 100%;
+			}
+			.form-input {
+				width: 80%;
+				padding: 1rem 2rem;
+				border-radius: 5px;
+				border: 1px solid c.$GrayishBlue;
+				font-weight: 700;
+			}
+			.form-input:focus {
+				outline: none !important;
+				border: 2px solid c.$Blue;
+			}
+			.btn {
+				width: 80%;
+				background-color: c.$Green;
+				color: #fff;
+				border: hsl(154, 56%, 40%) solid 1px;
+				border-bottom: hsl(154, 56%, 40%) solid 3px;
+				border-radius: 10px;
+				padding: 1rem 3rem;
+				text-transform: uppercase;
+				font-weight: 700;
+				cursor: pointer;
+			}
+			.error-icon {
+				position: absolute;
+				right: 15%;
+				margin-bottom: 20px;
+				display: none;
+			}
+			.invalid {
+				border: 2px solid c.$Red;
+			}
+			.error-message {
+				width: 80%;
+				color: c.$Red;
+				text-align: right;
+				font-size: 0.8rem;
+				display: none;
+			}
+			.active {
+				display: block;
+			}
+		}
+	}
+}
+@media (max-width: 800px) {
+	.card {
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		&__form {
+			margin-top: 2rem;
+		}
+		&__text {
+			width: 100%;
+		}
+	}
+	.trial-form {
+		padding: 2rem;
+	}
+}
