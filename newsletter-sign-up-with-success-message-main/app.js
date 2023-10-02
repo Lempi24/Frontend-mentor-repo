@@ -21,7 +21,7 @@ document.querySelector('.btn').addEventListener('click', (event) => {
 emailInputElement.addEventListener('input', () => {
 	if (!error.classList.contains('hidden')) {
 		error.classList.toggle('hidden');
-		emailInputElement.style.border = 'border: 1px solid hsl(231, 7%, 60%)';
+		emailInputElement.style.border = '1px solid hsl(231, 7%, 60%)';
 		emailInputElement.style.backgroundColor = '';
 		emailInputElement.style.color = 'hsl(234, 29%, 20%)';
 	}
