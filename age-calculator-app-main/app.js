@@ -57,20 +57,28 @@ button.addEventListener('click', (e) => {
 			validate = false;
 		}
 		if (validate) {
-			const userDate = new Date(
-				yearInput.value,
-				monthInput.value - 1,
-				dayInput.value
-			);
-			const diffMilliseconds = date - userDate;
-			const diffDays = Math.floor(diffMilliseconds / (1000 * 60 * 60 * 24));
-			const years = Math.floor(diffDays / 365);
-			const months = Math.floor((diffDays % 365) / 30);
-			const days = (diffDays % 365) % 30;
+			if (dayInput.value > day) {
+				day = day + daysInMonth[month - 1];
+				month = month - 1;
+			}
+			if (monthInput.value > month) {
+				month = month + 12;
+				currentYear = currentYear - 1;
+			}
 
-			dayOutput.textContent = days;
-			monthOutput.textContent = months;
-			yearOutput.textContent = years;
+			const dayToPrint = day - dayInput.value;
+			const monthToPrint = month - monthInput.value;
+			const yearToPrint = currentYear - yearInput.value;
+
+			// Dodaj obsługę, gdy miesiąc przekroczy 12
+			if (monthToPrint <= 0) {
+				monthToPrint += 12;
+				yearToPrint -= 1;
+			}
+
+			dayOutput.textContent = dayToPrint;
+			monthOutput.textContent = monthToPrint;
+			yearOutput.textContent = yearToPrint;
 		}
 	});
 });
