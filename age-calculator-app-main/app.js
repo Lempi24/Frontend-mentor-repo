@@ -70,7 +70,6 @@ button.addEventListener('click', (e) => {
 			const monthToPrint = month - monthInput.value;
 			const yearToPrint = currentYear - yearInput.value;
 
-			// Dodaj obsługę, gdy miesiąc przekroczy 12
 			if (monthToPrint <= 0) {
 				monthToPrint += 12;
 				yearToPrint -= 1;
