@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main class="card">
+    <form class="form">
+      <div class="form__input-element">
+        <p class="type">
+          Day
+        </p>
+        <input type="number" id="day" min="1" max="31" placeholder="DD" class="input">
+        <p class="alert hidden">This field is required</p>
+      </div>
+      <div class="form__input-element">
+        <p class="type">
+          Month
+        </p>
+        <input type="number" id="month" min="1" max="12" placeholder="MM" class="input">
+        <p class="alert hidden">This field is required</p>
+      </div>
+      <div class="form__input-element">
+        <p class="type">
+          Year
+        </p>
+        <input type="number" id="year" placeholder="YYYY" class="input" min="1">
+        <p class="alert hidden">This field is required</p>
+      </div>
+      <button id="btn" class="btn"><img src="assets/images/icon-arrow.svg" alt="Icon with arrow pointing down"></button>
+    </form>
+    <section class="output">
+      <p class="output-style"><span class="number-style" id="yearsOutput">--</span> years</p>
+      <p class="output-style"><span class="number-style" id="monthsOutput">--</span> months</p>
+      <p class="output-style"><span class="number-style" id="daysOutput">--</span> days</p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+
+</html>
